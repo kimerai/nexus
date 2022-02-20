@@ -6,7 +6,7 @@ The Kimerai (`kʲimeɾai`) project was started as a novel way to organize Discor
 
 Discord bots are often projects taken on by novices, and as a result, many online resources often don't cover certain things that could be highly beneficial to certain types of bots. However, I know nothing about the intricacies of bots; Kimerai goes off the beaten path solely for the sake of exploration and curiosity.
 
-As stated before, the Kimerai project was started as a novel way to organize Discord bots. Kimerai attempts to decouple frontend and backend code. Frontends are split into `scylla` and `charybdis`, the projects for the Discord bot frontend and the website frontend respectively. Backends are split into "modules" which are analogous to what some Discord libraries call "cogs".
+As stated before, the Kimerai project was started as a novel way to organize Discord bots. Kimerai attempts to decouple frontend and backend code. Frontends are split into the Discord bot frontend and the website frontend. Backends are split into "modules" which are analogous to what some Discord libraries call "cogs".
 
 This modularity is Kimerai's greatest strength. The decoupling frontend and backend forces an architecture which is test-friendly. Furthermore, splitting up different components of the backend allows for them to be dynamically horizontally scaled, independent of each other. This modularity also allows for selective deployment: you only deploy the modules that you want. I guess it's also cool that [Docker recommends this approach](https://docs.docker.com/config/containers/multi-service_container/).
 
